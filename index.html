@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic HTML Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to the Basic HTML Page</h1>
-    <p>This is a simple HTML page created as per your request.</p>
+  <header>
+    <nav class="navbar">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2 id="greeting">Hi, Welcome To Website</h2>
+      <p>Ini adalah website latihan </p>
+      <div class="banner">1366x578</div>
+    </section>
+
+    <section class="headquarter">
+      <h3>Our Headquarter</h3>
+      <div class="hq-circles">
+        <div class="circle">Jakarta</div>
+        <div class="circle">Bandung</div>
+        <div class="circle">Surabaya</div>
+      </div>
+    </section>
+
+    <section id="message" class="message-us">
+      <h3>Message Us</h3>
+      <form id="messageForm">
+        <label>Nama <input type="text" id="name"></label>
+        <label>Tanggal Lahir <input type="date" id="birthdate"></label>
+        <label>Jenis Kelamin:
+          <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+          <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </label>
+        <label>Pesan <textarea id="messageInput"></textarea></label>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="output" id="output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created By Subki</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
