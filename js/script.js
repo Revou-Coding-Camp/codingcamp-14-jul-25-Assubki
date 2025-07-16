@@ -1,12 +1,8 @@
-// File: js/script.js
-
-// Prompt user for their name and update greeting
 const userName = prompt("Siapa namamu?");
 if (userName) {
   document.getElementById("greeting").textContent = `Hi ${userName}, Welcome To Website`;
 }
 
-// Handle form submission
 const form = document.getElementById("messageForm");
 const output = document.getElementById("output");
 
