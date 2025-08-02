@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Website latihan HTML CSS JavaScript oleh Subki.">
+  <meta name="author" content="Subki">
   <title>My Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <img src="assets/logo.png" alt="Logo" class="logo">
+      <img src="assets/Logo.png" alt="Logo" class="logo" />
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#message">Message Us</a></li>
       </ul>
@@ -21,9 +24,9 @@
 
   <main>
     <section class="welcome">
-      <h2 id="greeting">Hi, Welcome To Website</h2>
-      <p>Ini adalah website latihan </p>
-      <div class="banner">1366x578</div>
+      <h2>Hi, Welcome To Our Website</h2>
+      <p>Website ini dibuat untuk latihan HTML, CSS, dan JavaScript</p>
+      <div class="banner">Image Placeholder</div>
     </section>
 
     <section class="headquarter">
@@ -37,24 +40,29 @@
 
     <section id="message" class="message-us">
       <h3>Message Us</h3>
-      <form id="messageForm">
-        <label>Nama <input type="text" id="name"></label>
-        <label>Tanggal Lahir <input type="date" id="birthdate"></label>
-        <label>Jenis Kelamin:
-          <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
-          <input type="radio" name="gender" value="Perempuan"> Perempuan
-        </label>
-        <label>Pesan <textarea id="messageInput"></textarea></label>
+      <form>
+        <label for="name">Nama</label>
+        <input type="text" id="name" required />
+
+        <label for="birthdate">Tanggal Lahir</label>
+        <input type="date" id="birthdate" required />
+
+        <label>Jenis Kelamin</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+        </div>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" required></textarea>
+
         <button type="submit">Submit</button>
       </form>
-      <div class="output" id="output"></div>
     </section>
   </main>
 
   <footer>
-    <p>Created By Subki</p>
+    <p>Created by Subki &copy; 2025</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
